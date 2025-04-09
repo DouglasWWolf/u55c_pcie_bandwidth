@@ -18,7 +18,7 @@ set_property -dict {PACKAGE_PIN BE45  IOSTANDARD LVCMOS18} [get_ports hbm_cattri
 #
 # PCIe0 RefClk
 #
-# PCIe0 is: Block X1Y0
+# PCIe0 is: Block X1Y1
 #           Quad  227
 #
 set_property PACKAGE_PIN AL15                   [get_ports pcie0_refclk_clk_p]
@@ -30,7 +30,7 @@ set_clock_groups -group [get_clocks pcie0_sys_clk -include_generated_clocks] -as
 #
 # PCIe1 RefClk
 #
-# PCIe1 is: Block X1Y1
+# PCIe1 is: Block X1Y0
 #           Quad  225
 #
 set_property PACKAGE_PIN AR15                   [get_ports pcie1_refclk_clk_p]
@@ -83,16 +83,16 @@ set_property -dict {PACKAGE_PIN BF41  IOSTANDARD LVCMOS18} [get_ports pcie_perst
 #
 # HBM_0 Reference Clock, 100 Mhz
 #
-#set_property -dict {PACKAGE_PIN BK10  IOSTANDARD LVDS}  [get_ports hbm0_refclock_clk_p]
-#set_property -dict {PACKAGE_PIN BL10  IOSTANDARD LVDS}  [get_ports hbm0_refclock_clk_n]
-#create_clock -period 10.000 -name HBM0_REFCLK           [get_ports hbm0_refclock_clk_p]
+#set_property -dict {PACKAGE_PIN BK10  IOSTANDARD LVDS}  [get_ports hbm0_refclk_clk_p]
+#set_property -dict {PACKAGE_PIN BL10  IOSTANDARD LVDS}  [get_ports hbm0_refclk_clk_n]
+#create_clock -period 10.000 -name HBM0_REFCLK           [get_ports hbm0_refclk_clk_p]
 
 
 
 #
 # HBM_1 Reference Clock, 100 Mhz
 #
-#set_property -dict {PACKAGE_PIN BK43  IOSTANDARD LVDS}  [get_ports hbm1_refclock_clk_p]
-#set_property -dict {PACKAGE_PIN BK44  IOSTANDARD LVDS}  [get_ports hbm1_refclock_clk_n]
-#create_clock -period 10.000 -name HBM1_REFCLK           [get_ports hbm1_refclock_clk_p]
+#set_property -dict {PACKAGE_PIN BK43  IOSTANDARD LVDS}  [get_ports hbm1_refclk_clk_p]
+#set_property -dict {PACKAGE_PIN BK44  IOSTANDARD LVDS}  [get_ports hbm1_refclk_clk_n]
+#create_clock -period 10.000 -name HBM1_REFCLK           [get_ports hbm1_refclk_clk_p]
 

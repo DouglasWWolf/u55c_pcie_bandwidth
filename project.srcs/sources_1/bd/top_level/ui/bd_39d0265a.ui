@@ -48,7 +48,7 @@ levelinfo -pg 1 0 150 460 730 940 1040
 pagesize -pg 1 -db -bbox -sgen -140 0 1210 660
 ",
    "No Loops_ScaleFactor":"0.845455",
-   "No Loops_TopLeft":"-174,0",
+   "No Loops_TopLeft":"-175,1",
    "guistr":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
 #  -string -flagsOSRD
 preplace port SYSCLK2 -pg 1 -lvl 0 -x 0 -y 70 -defaultsOSRD

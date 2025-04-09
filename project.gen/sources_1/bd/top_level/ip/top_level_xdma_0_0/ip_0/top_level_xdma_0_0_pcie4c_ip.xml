@@ -8683,12 +8683,8 @@
         </spirit:fileSetRef>
         <spirit:parameters>
           <spirit:parameter>
-            <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sat Apr 05 09:34:01 UTC 2025</spirit:value>
-          </spirit:parameter>
-          <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:29e66355</spirit:value>
+            <spirit:value>9:8d9a3545</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -13933,7 +13929,7 @@
             </spirit:wireTypeDef>
           </spirit:wireTypeDefs>
           <spirit:driver>
-            <spirit:defaultValue spirit:format="bitString" spirit:resolve="dependent" spirit:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.PF0_DEVICE_ID&apos;))" spirit:bitStringLength="16">0x903F</spirit:defaultValue>
+            <spirit:defaultValue spirit:format="bitString" spirit:resolve="dependent" spirit:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.PF0_DEVICE_ID&apos;))" spirit:bitStringLength="16">0x903f</spirit:defaultValue>
           </spirit:driver>
         </spirit:wire>
         <spirit:vendorExtensions>
@@ -23462,7 +23458,7 @@
       <spirit:modelParameter spirit:dataType="std_logic_vector">
         <spirit:name>PF0_DEVICE_ID</spirit:name>
         <spirit:displayName>Pf0 Device Id</spirit:displayName>
-        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF0_DEVICE_ID" spirit:bitStringLength="16">0x903F</spirit:value>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF0_DEVICE_ID" spirit:bitStringLength="16">0x903f</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="string">
         <spirit:name>PF0_DEV_CAP2_128B_CAS_ATOMIC_COMPLETER_SUPPORT</spirit:name>
@@ -24787,7 +24783,7 @@
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>pcie_blk_locn</spirit:name>
         <spirit:displayName>Pcie Blk Locn</spirit:displayName>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.pcie_blk_locn">6</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.pcie_blk_locn">7</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="string">
         <spirit:name>PIPE_SIM</spirit:name>
@@ -24980,7 +24976,7 @@
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="string">
         <spirit:name>EN_GT_SELECTION</spirit:name>
-        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.EN_GT_SELECTION">FALSE</spirit:value>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.EN_GT_SELECTION">TRUE</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="string">
         <spirit:name>SELECT_QUAD</spirit:name>
@@ -26102,6 +26098,10 @@
       <spirit:enumeration>ACTIVE_HIGH</spirit:enumeration>
     </spirit:choice>
     <spirit:choice>
+      <spirit:name>choice_list_6f5507b7</spirit:name>
+      <spirit:enumeration>None</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
       <spirit:name>choice_list_75aee2a8</spirit:name>
       <spirit:enumeration>X8G3</spirit:enumeration>
       <spirit:enumeration>X16G3</spirit:enumeration>
@@ -26128,14 +26128,6 @@
       <spirit:enumeration>5.0_GT/s</spirit:enumeration>
       <spirit:enumeration>8.0_GT/s</spirit:enumeration>
       <spirit:enumeration>16.0_GT/s</spirit:enumeration>
-    </spirit:choice>
-    <spirit:choice>
-      <spirit:name>choice_list_8061eec5</spirit:name>
-      <spirit:enumeration>None</spirit:enumeration>
-      <spirit:enumeration>Tandem_PROM</spirit:enumeration>
-      <spirit:enumeration>Tandem_PCIe</spirit:enumeration>
-      <spirit:enumeration>Tandem_PCIe_with_Field_Updates</spirit:enumeration>
-      <spirit:enumeration>DFX_over_PCIe</spirit:enumeration>
     </spirit:choice>
     <spirit:choice>
       <spirit:name>choice_list_81a1639d</spirit:name>
@@ -26505,7 +26497,7 @@
     <spirit:parameter>
       <spirit:name>PF0_DEVICE_ID</spirit:name>
       <spirit:displayName>Pf0 Device Id</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PF0_DEVICE_ID" spirit:order="25">903F</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PF0_DEVICE_ID" spirit:order="25">903f</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>PF0_DEV_CAP2_128B_CAS_ATOMIC_COMPLETER_SUPPORT</spirit:name>
@@ -27325,7 +27317,7 @@
     <spirit:parameter>
       <spirit:name>pcie_blk_locn</spirit:name>
       <spirit:displayName>Pcie Blk Locn</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pcie_blk_locn" spirit:choiceRef="choice_list_3da957d0" spirit:order="4">X1Y0</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pcie_blk_locn" spirit:choiceRef="choice_list_3da957d0" spirit:order="4">X1Y1</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>pf0_sriov_bar1_64bit</spirit:name>
@@ -30997,7 +30989,14 @@
     <spirit:parameter>
       <spirit:name>mcap_enablement</spirit:name>
       <spirit:displayName>MCAP Enable</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.mcap_enablement" spirit:choiceRef="choice_list_8061eec5" spirit:order="330">None</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.mcap_enablement" spirit:choiceRef="choice_list_6f5507b7" spirit:order="330">None</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:id="PARAM_ENABLEMENT.mcap_enablement">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>mcap_fpga_bitstream_version</spirit:name>
@@ -31025,18 +31024,11 @@
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>en_gt_selection</spirit:name>
-      <spirit:value spirit:format="bool" spirit:resolve="user" spirit:id="PARAM_VALUE.en_gt_selection" spirit:order="3.5">false</spirit:value>
+      <spirit:value spirit:format="bool" spirit:resolve="user" spirit:id="PARAM_VALUE.en_gt_selection" spirit:order="3.5">true</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>select_quad</spirit:name>
       <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.select_quad" spirit:choiceRef="choice_list_abc20383" spirit:order="4.5">GTY_Quad_227</spirit:value>
-      <spirit:vendorExtensions>
-        <xilinx:parameterInfo>
-          <xilinx:enablement>
-            <xilinx:isEnabled xilinx:id="PARAM_ENABLEMENT.select_quad">false</xilinx:isEnabled>
-          </xilinx:enablement>
-        </xilinx:parameterInfo>
-      </spirit:vendorExtensions>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>copy_pf0</spirit:name>
@@ -31925,6 +31917,7 @@
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.pipe_sim" xilinx:valueSource="propagated"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.plltype" xilinx:valueSource="propagated"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.rbar_enable" xilinx:valueSource="propagated"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.select_quad" xilinx:valueSource="propagated"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.set_finite_credit" xilinx:valueSource="propagated"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.sys_reset_polarity" xilinx:valueSource="propagated"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.tandem_enable_rfsoc" xilinx:valueSource="propagated"/>

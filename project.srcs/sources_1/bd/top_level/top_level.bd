@@ -164,7 +164,7 @@
                 "value": "true"
               },
               "en_gt_selection": {
-                "value": "false"
+                "value": "true"
               },
               "functional_mode": {
                 "value": "AXI_Bridge"
@@ -173,7 +173,7 @@
                 "value": "Advanced"
               },
               "pcie_blk_locn": {
-                "value": "PCIE4C_X1Y0"
+                "value": "PCIE4C_X1Y1"
               },
               "pf0_bar0_scale": {
                 "value": "Megabytes"
@@ -182,7 +182,7 @@
                 "value": "1"
               },
               "pf0_device_id": {
-                "value": "903F"
+                "value": "903f"
               },
               "pf0_msi_enabled": {
                 "value": "false"
@@ -192,6 +192,9 @@
               },
               "pl_link_cap_max_link_width": {
                 "value": "X8"
+              },
+              "select_quad": {
+                "value": "GTY_Quad_227"
               }
             },
             "interface_ports": {
@@ -1783,7 +1786,7 @@
                 "value": "Advanced"
               },
               "pcie_blk_locn": {
-                "value": "PCIE4C_X1Y1"
+                "value": "PCIE4C_X1Y0"
               },
               "pf0_bar0_scale": {
                 "value": "Megabytes"
